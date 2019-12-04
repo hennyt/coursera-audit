@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Henny Tasker SI 539 Final</title>
+    <style>
+  		video{
+  			width: 90%;
+  			border: 1px solid black;
+  		}
+  		button{
+  			margin-bottom: 5px;
+  		}
+      h1,h2{
+        text-align: center;
+      }
+      h3{
+        margin: 20px 0;
+      }
+      body,p{
+    		font-family:Arial, sans-serif;
+    		font-size: 1rem;
+    		line-height: 1.5rem;
+    		display: inline-block;
+    		margin-left: 1.5rem;
+    		margin-right: 1.5rem;
+    	}
+      img{
+        display: block;
+        margin: 1.5rem auto;
+        max-height: 500px;
+      }
+      figcaption{
+        text-align: center;
+      }
+  </style>
+  </head>
+  <body>
+    <main>
+      <h1>Accessibility Auditing Coursera: Video Transcript</h1>
+      <h2>Henny Tasker's Final Project SI 539 F19</h2>
+      <figure>
+        <a href="https://www.youtube.com/watch?v=9PKOzmCb0no&feature=youtu.be" target="_blank"><img src="imgs/a11y-audit-coursera.PNG" alt="A linked youtube video thumbnail that reads Accessibility Auditing Coursera"></a>
+        <figcaption>[Click image to <a href="https://www.youtube.com/watch?v=9PKOzmCb0no&feature=youtu.be" target="_blank">follow link</a> or paste the following into browser: https://www.youtube.com/watch?v=9PKOzmCb0no&feature=youtu.be]</figcaption>
+      </figure>
+
+      <h3> Video Transcript</h3>
+    <p>Coursera, the online learning platform, has a mission “to envision a world where anyone, anywhere can transform their life by accessing the world's best learning experience”. Lately I've been working to develop Coursera content for an online master's degree program here at the University of Michigan. And it's got me thinking: how accessible is Coursera?</p>
+    <p>Coursera’s accessibility policy seems to adhere to a universal access model, also known as universal design, a term famously invented by the architect Ronald Mace to express the idea that design should be accessible, without the need for alternative or parallel experiences. Coursera also has an accommodations for learners with disabilities policy, which covers accommodations for Deaf and Hard of Hearing learners, accommodations for people with low and no vision, and accommodations for learning disabilities. Additional accommodations are provided through Coursera support.</p>
+    <p>Moreover, Coursera claims adherence to the Web Content Accessibility Guidelines Version 2.0 or WCAG 2.0 at the Double A Standard, which is the level recommended by the US Access Board in the latest update of Section 508 of the Americans with Disabilities Act, or ADA.</p>
+    <p>But there are a couple of features about Coursera which make these claims potentially tricky to stand by and tricky to investigate. Coursera is a content aggregation site, meaning it pulls external content from partner corporations and universities, who contribute content to host on the Coursera website. In some cases, Coursera also interfaces with third party applications, most commonly to host assignments and demonstrations of applied course material to learners.</p>
+    <p>Since I work with a interdepartmental team responsible for creating content for Coursera at the University of Michigan. I've been able to see some of the process that falls on people like learning experience designers and accessibility experts to ensure curricular content is accessible. So my question is this: to what degree is accessibility quote unquote baked in to Coursera, and to what extent does the corporation or university dictate how accessibility is addressed in the course?</p>
+    <p>Let's get started.</p>
+    <p>For this accessibility check, I’m using a combination of automated and manual checks to assess content according to guidelines put out by the <a href="https://webaim.org/resources/evalquickref/evalquickref.pdf">Web with Access in Mind</a> working group. For my automated checks, I am using the <a href="https://wave.webaim.org/">WAVE web accessibility evaluation </a>browser add-on. For my manual checks, I will be running a series of tests based on the <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0 </a>success criteria or SCs. But what’s the point of these tests? To ensure that Coursera content is perceivable, operable, and understandable to people with disabilities and to people using accessibility tools to navigate the web, but also to test accessible content with a future-thinking mindset. Will the accessibility of content persist in the future – is it robust? Together, all of these considerations spell out the acronym POUR: Perceivable, Operable, Understandable, and Robust.</p>
+    <p>Now, let’s define the bounds of this accessibility check. I’ll limit the check to a single course on Coursera, and one that I’ve never taken before. Since I wish I were better at Data Science fundamentals, I’ll sign up for <a href="https://www.coursera.org/learn/python-data-analysis/">Introduction to Data Science with Python</a>. And since there’s quite a lot of content here, I’ll limit the bounds further to the first week, which covers one overview page, one discussion forum, 11 videos, 4 readings (which includes the syllabus), one programming assignment hosted by the external open-source web platform, Jupyter Notebooks, and a quiz. This translates to nineteen webpages.</p>
+    <p>To keep things interesting, I’ll summarize the automated checks using the WAVE browser plug-in now. Because Coursera’s overlying structure is largely the same across the webpages, the same issues seemed to pop up consistently.</p>
+    <p>Here’s the breakdown. I put my burgeoning data science skills to the test, and ran some simple averages through matplotlib in my trusty terminal. Pages that hosted videos on average had 36 errors, 46 alerts which represent items which could be accessible or inaccessible (but couldn’t be sufficiently automatically checked to determine one way or another), 6 contrast errors, which means that colors are in use that may be hard for a person with low vision or with colorblindness to perceive, and 3 images with empty alternative text. Alternative text serves to describe images to people with low or no vision, or to people with slow internet connections.</p>
+    <p>Pages that hosted readings (both internal Coursera pages and externally-hosted pages) boasted an average of just over 17 errors, just over 2 alerts, 5 contrast errors, and 2 empty alt text. It’s worth noting here that the external readings brought the average down a little bit.</p>
+    <p>Next, I looked at the quiz which had 80 errors, 15 alerts, 30 contrast errors, and 5 empty alt text.</p>
+
+    <p>Last, I looked at the dicussion forum, which had 4 errors, 2 alerts, 1 contrast error, and 2 empty alt text.</p>
+
+    <p>This can make you think that things are pretty grim. Put another way, that’s a lot of errors. So let’s look at the other half of this accessibility check and put things to the test manually. I’ll use a combination of tabbing and the Mac VoiceOver feature to see just how perceivable and operable things are.</p>
+
+    <p>Here’s where things get interesting. I forgot about the Jupyter Notebook and, well, it had a lot of errors. So many errors (245!) that we’ll deal with it a bit later.</p>
+
+    <p>Another interesting thing is that the page I struggled with the most to navigate was the discussion forum, one with comparatively few issues. It was difficult (for me, a novice user of VoiceOver) to tab into the actual message of each forum post without first selecting the post and navigating away from the main forum page. I also realized later that I couldn’t read or hear the user name of the person who posted either the post or the reply. This would be useful to know – for one, to see which posts were staff written, which posts were pinned, and you know – who responded to who.</p>
+
+    <p>So why do all these errors not necessarily correlate with a bad or illegible experience? And why did a page with comparatively few errors present such a problem to me?</p>
+
+    <p>Well, the culprits are aria references and tabindexes, as far as I can tell. Aria references, according to the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute">Mozilla Developer Web Docs</a>, are used to “establish a relationship between a widget or group of things and the text that describes them”. Aria references can be refer to the attribute aria-describedby and aria-labeledby.</p>
+
+    <p>An <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute">example pulled from the Mozilla Developer documentation</a> is here: You see a calendar group which is labeled as a calendar, and described by the id “info”, which reads, “This calendar shows the game schedule for the Boston Red Sox.” Put together, these labels and references make it clear that the application described is a calendar with a certain purpose: to show the game schedule for the Boston Red Sox.</p>
+
+    <p>In the video-hosted pages, quite a few of the errors are aria reference errors. These errors, however, are duplication errors which don’t prevent aria references from being called – as you can see here, the aria reference is being called along with what I’m guessing is an internal developer note (or mistake) the developers didn’t remove before production.</p>
+
+    <p>In contrast, the reason for an incomplete and confusing experience in the discussion forum seems to be due to <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex">negative tabindexes</a>. Tabindexes set a certain order in which items on a webpage are tabbed across. If tabindexes have a value assigned to them, that overrides the natural cascading order in which items are presented in HTML. Negative values for the tabindex mean that the item is skipped over when users tab across the page. This isn’t flagged as an error because there could be legitimate cases in which a developer would want to prevent users from tabbing over an element – if it’s not meant to be editable, or truly just a decorative item that doesn’t interfere with the meaning of the site. But in this case, it did impact my experience on this page.</p>
+
+
+    <p>Lastly, a word on Jupyter Notebooks and institutional use of Jupyter Notebooks – Jupyter Notebooks is unilaterally inaccessible. Here are a summary of issues that I (and people who use screenreaders and keyboard navigation as their primary means of accessing the web) have found:</p>
+
+    <p>
+      <ol>
+        <li>keyboard focus does not reliably work across all cells (again, this seems to be due to tabindexes, but the extensive use of Javascript scripts certainly have a lot to do with this issue, too)</li>
+        <li>there is no cursor feedback when editing cells, so that you cannot tell which part of the code function you are editing</li>
+        <li>Voiceover drops certain parts of Latex equations</li>
+        <li>Voiceover does not recognize certain symbols for arguments in a function</li>
+        <li>keyboard navigation order is unexpected, causing users to bounce around the jupyter notebook</li>
+      </ol>
+    </p>
+
+    <p>and more. For a more comprehensive list, you may visit <a href="https://github.com/jupyter/accessibility"> Jupyter Notebook’s Accessibility tag</a> for open issues.</p><br>
+
+    <p>So what’s the larger picture here? Right now, I’m uncertain.</p>
+
+    <p>Jupyter Notebook developers are currently working on Jupyter Labs, which has more features for institutions and will be more accessible. But these issues with accessibility were first noted in their Github project page in 2018, three years after Jupyter Notebooks went public. With Jupyter Notebooks, it’s almost easier to draw conclusions about accessibility: accessibility is clearly not “baked in”, and that’s of course bad. We might then think what it means for this course to endorse Jupyter Notebooks, and what alternatives may be offered.</p>
+
+    <p>But for the rest of this Coursera course – for week 1 at least – conclusions are less clear. What does it mean that Coursera says they try to be accessible, while having quite a few errors flagged? And what does it mean if these errors are not necessarily correlated with a negative, inaccessible experience?</p>
+
+    <p>Perhaps we need more information here. Perhaps we need to start thinking of the lived experience of accessibility as something broader than a series of checks. Although checks are certainly a good start, they’re not always reliable. What do you think?</p>
+
+    <script>
+    let vid = document.getElementById("myVideo");
+    function playVid() {
+      console.log("Play Video")
+      vid.play();
+    }
+    function pauseVid() {
+      console.log("Pause Video")
+      vid.pause();
+    }
+    </script>
+
+  </body>
+</html>
