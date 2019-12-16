@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Henny Tasker SI 539 Final</title>
+    <title>Henny Tasker SI 552 Final</title>
     <style>
   		video{
   			width: 90%;
@@ -38,9 +38,9 @@
   <body>
     <main>
       <h1>Accessibility Auditing Coursera: Video Transcript</h1>
-      <h2>Henny Tasker's Final Project SI 539 F19</h2>
+      <h2>Henny Tasker's Final Project SI 552 F19</h2>
       <figure>
-        <a href="https://www.youtube.com/watch?v=9PKOzmCb0no&feature=youtu.be" target="_blank"><img src="imgs/a11y-audit-coursera.PNG" alt="A linked youtube video thumbnail that reads Accessibility Auditing Coursera"></a>
+        <a href="https://youtu.be/a674rdKev0o" target="_blank"><img src="imgs/a11y-audit-coursera.PNG" alt="A linked youtube video thumbnail that reads Accessibility Auditing Coursera"></a>
         <figcaption>[Click image to <a href="https://www.youtube.com/watch?v=9PKOzmCb0no&feature=youtu.be" target="_blank">follow link</a> or paste the following into browser: https://www.youtube.com/watch?v=9PKOzmCb0no&feature=youtu.be]</figcaption>
       </figure>
 
@@ -97,7 +97,21 @@
 
     <p>But for the rest of this Coursera course – for week 1 at least – conclusions are less clear. What does it mean that Coursera says they try to be accessible, while having quite a few errors flagged? And what does it mean if these errors are not necessarily correlated with a negative, inaccessible experience?</p>
 
-    <p>Perhaps we need more information here. Perhaps we need to start thinking of the lived experience of accessibility as something broader than a series of checks. Although checks are certainly a good start, they’re not always reliable. What do you think?</p>
+    <p>I think it means we’re talking about several things, right now. You may have noticed that I haven’t shown you compliance guidelines or a checked list or even really talked about the ADA yet in this video. That’s because I'm being intentional, here – I’m not talking about ADA website compliance but about website accessibility. These things are different. One is about legal issues and landmark cases, and one is about usability and functionality. The reason why I’m not talking about the legal aspects of accessiblity is because I’m not a legal expert – and in any case, we’re in a grey area here as far as legal standards or guidelines go. Although the Supreme Court has referenced WCAG 2.0 at the Double A standard as a blueprint, nothing is official, WCAG 2.0 is not a legal document, was not written as a legal document, and is also out-of-date – we’re at WCAG 2.1.1 now. </p>
+
+    <p>There is a particularly noteworthy study that I wanted to talk about, which is here, and it finds in part that people are bad at interpreting or reporting, or passing sites for accessibility and this happens as a type one error and a type two error, which is to say that sometimes people even professionally trained accessibility experts are flagging things in a website that is not an accessibility issue or vice versa passing things that are an accessibility issue. There has been a call in recent years to further standardize the process of assessing website content, one of which is EARL, which stands for Evaluation and Report Lanugage. EARL is particularly interesting because it can be semantically-understood by computers and is meant to help process and analyze accessibility test findings, no matter what vendor or process an assessor uses in their testing. One main takeaway here is that to start thinking of the lived experience of accessibility as something broader than a series of checks. Remember, access is about how things work for different populations of people. And although checks are certainly a good start, they’re oftentimes subjective. But luckily, checks can still do a pretty good job of turning up issues and more importantly, begin a conversation about access, inclusion, and how to fix potential issues.  </p>
+
+    <p>First, let’s look at some good things.  Coursera requires that all videos must be captioned in their video transcripts before any content is uploaded to the Coursera platform. They require downloadable videos and lecture slides, so users can access material offline, and so that people using screenreaders can tab through lecture slides to hear content. However, one thing I noticed was that the tab order for lecture slides, particularly when lecture slides were converted to pdf, was not always logical. While the team I work with has our own accessibility checklist which covers tab orders, I wonder if this is not a priority for other programs or institutions. </p>
+
+    <p>Second, Coursera should be mindful of color contrast. The standard is a color ratio of 4:5:1 unless large text is present. Most of these violations were found in button setting texts (for example, when site notifications were turned on or off). Coursera also had a number of very small text warnings, both in the footer of the website and in the weekly overview pages.</p>
+
+    <p>Third, Coursera has a flagging system, which people can use to report quality, technical, or content concerns on videos, homework assignments, readings, but I noticed that there is no place to flag accessibility needs. And that could be helpful. Number one, because it raises transparency and signals that Coursera cares about (and is responsible for) accessibility issues which are found in its courses, and number two, that without that sort of flagging system, then how much gets reported and how much gets brushed off because it’s not worth the trouble to figure out how to report an accessibility issue?</p>
+
+    <p>For example, when watching videos in the Week One content that I reviewed, I noticed that there were a couple points in lectures where a figure or a graph was displayed which the lecturer made a passing reference to but did not explain what “this function” or “this figure” depicted specifically. In some of these cases, the graph or figure was present in the downloadable slides, and had alt text. But in other cases, the graph or figure that the professor was referring to on screen was not part of a lecture slide, but part of a Jupyter notebook screencast. Therefore the graph or figure was only accessible via the Jupyter notebooks environment, which is not accessible. This is an issue which can stand in the way of overall learner comprehension of a video, but is it an insurmountable issue? Is it worth figuring out how to contact Coursera directly and waiting to be routed to a person who can rectify this issue, either via Coursera or the institution which produced the content?</p>
+
+    <p>Lastly, I can’t wait to see Jupyter Labs be accessible. But it’s important to for Coursera to vet all partnered organizations and the tools they use moving forward to ensure that all parts of the course are accessible – not just the instructional content which is directly hosted on Coursera.</p>
+
+    <p>In these last couple points, I’ve been dancing around this question: what exactly is Coursera’s responsibility around access and what is the partnering institution or company’s responsibility? Who gets to decide how accessibility issues are handled? Ultimately, the obvious answer is Coursera does. Currently, the legal standards give organizations leeway on what constitutes a “good-faith effort” to be accessible. But if Coursera does in fact subscribe to a theory of universal access, then it should examine at least some of these recommendations for accessibility. And with that, I hope I’ve given a sense of how complex – and important – accessibility for the web is. Stick around for my recommended reading list, and have a great day!</p>
 
     <script>
     let vid = document.getElementById("myVideo");
